@@ -33,17 +33,25 @@ El notebook se organiza en las siguientes secciones:
 
 1. Obtención de datos
 
-- Fear & Greed Index
-- Tipo de cambio PEN/USD (BCRP)
-- DXY, VIX y BTC
+- Se descargaron los datos del Fear & Greed Index (FGI) desde la API de Alternative.me.
+- Se extrajeron series financieras desde distintas fuentes:
+  - Tipo de cambio USD/PEN desde el BCRP.
+  - Índice DXY y VIX desde Yahoo Finance.
+  - Precio de Bitcoin (BTC/USD) también desde Yahoo Finance.
 
 2. Unificación de datos
-   
+
+- Conversión de etiquetas de fechas a formato datetime para unificar todas las series.
+- Manejo de valores faltantes y estandarización de las frecuencias temporales.
 - Consolidación de todas las fuentes en un único DataFrame para facilitar el análisis.
 
 3. Análisis exploratorio
    
-- Estadísticas descriptivas, visualización de tendencias y correlaciones.
+- Gráficos de series de tiempo para observar la evolución de cada variable.
+- Boxplots de retornos diarios y variables a nivel para comparar dispersión y detectar valores atípicos.
+- Histogramas para analizar la distribución de las variables.
+- Gráficos de dispersión para evaluar relaciones entre el tipo de cambio USD/PEN y las demás variables.
+- Visualización en un heatmap para identificar la fuerza y dirección de las relaciones.
 
 4. Conclusiones
    
